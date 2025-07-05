@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      // EmailJS configuration
+      // EmailJS configuration - Replace these with your actual values
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
@@ -46,10 +46,10 @@ const Contact: React.FC = () => {
       };
 
       await emailjs.send(
-        'service_portfolio', // You'll need to replace with your EmailJS service ID
-        'template_contact', // You'll need to replace with your EmailJS template ID
+        'service_ai1kbyy', // Your service ID
+        'template_portfolio', // You need to create this template ID
         templateParams,
-        'your_public_key' // You'll need to replace with your EmailJS public key
+        'YOUR_PUBLIC_KEY' // You need to get your public key
       );
 
       toast.success('Message sent successfully! I\'ll get back to you soon.', {
@@ -298,16 +298,17 @@ const Contact: React.FC = () => {
             </form>
 
             {/* EmailJS Setup Instructions */}
-            <div className="mt-6 p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-700 rounded-xl">
+            <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded-xl">
               <div className="flex items-start space-x-3">
-                <AlertCircle className="w-5 h-5 text-yellow-600 dark:text-yellow-400 mt-0.5" />
-                <div className="text-sm text-yellow-800 dark:text-yellow-300">
-                  <p className="font-semibold mb-1">EmailJS Setup Required</p>
-                  <p>To enable the contact form, please:</p>
+                <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5" />
+                <div className="text-sm text-blue-800 dark:text-blue-300">
+                  <p className="font-semibold mb-1">EmailJS Setup Status</p>
+                  <p>✅ Service ID: service_ai1kbyy (configured)</p>
+                  <p>⚠️ Still needed:</p>
                   <ol className="list-decimal list-inside mt-2 space-y-1">
-                    <li>Create an account at <a href="https://emailjs.com" target="_blank" rel="noopener noreferrer" className="underline">emailjs.com</a></li>
-                    <li>Create a service and template</li>
-                    <li>Update the service ID, template ID, and public key in the Contact component</li>
+                    <li>Create an email template in your EmailJS dashboard</li>
+                    <li>Get your Public Key from Account settings</li>
+                    <li>Update the template ID and public key in this component</li>
                   </ol>
                 </div>
               </div>
