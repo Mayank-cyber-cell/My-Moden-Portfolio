@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a192f" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Mayank Kumar Shah - Web Developer | Dreamer | Future Innovator</title>
+    <meta name="description" content="Passionate web developer and B.Tech CSE student building innovative solutions. Explore my projects including EcoCoder, Zomato Clone, and AI Study Partner App." />
+    <meta name="keywords" content="Mayank Kumar Shah, Web Developer, B.Tech CSE, Python, JavaScript, HTML, CSS, Portfolio, EcoCoder, Zomato Clone, AI Study Partner" />
+    <meta name="author" content="Mayank Kumar Shah" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://mayankkumarshahmodernportfolio.netlify.app/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mayankkumarshahmodernportfolio.netlify.app/" />
+    <meta property="og:title" content="Mayank Kumar Shah - Web Developer | Dreamer | Future Innovator" />
+    <meta property="og:description" content="Passionate web developer and B.Tech CSE student building innovative solutions. Explore my projects and journey in tech." />
+    <meta property="og:image" content="https://mayankkumarshahmodernportfolio.netlify.app/profile.jpg" />
+    <meta property="og:site_name" content="Mayank Kumar Shah Portfolio" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mayankkumarshahmodernportfolio.netlify.app/" />
+    <meta property="twitter:title" content="Mayank Kumar Shah - Web Developer | Dreamer | Future Innovator" />
+    <meta property="twitter:description" content="Passionate web developer and B.Tech CSE student building innovative solutions." />
+    <meta property="twitter:image" content="https://mayankkumarshahmodernportfolio.netlify.app/profile.jpg" />
+    <meta property="twitter:creator" content="@mayankkshah" />
+    
+    <!-- Additional SEO -->
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.country" content="India" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://api.emailjs.com" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/profile.jpg" as="image" type="image/jpeg" />
+    <link rel="preload" href="/Mayank_Kumar_Shah_Resume.pdf" as="document" />
+    
+    <!-- Google Fonts - Optimized loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mayank Kumar Shah",
+      "jobTitle": "Web Developer",
+      "description": "Passionate web developer and B.Tech CSE student",
+      "url": "https://mayankkumarshahmodernportfolio.netlify.app/",
+      "email": "jimayank2105@gmail.com",
+      "image": "https://mayankkumarshahmodernportfolio.netlify.app/profile.jpg",
+      "sameAs": [
+        "https://github.com/Mayank-cyber-cell",
+        "https://www.linkedin.com/in/mayankkshah",
+        "https://www.instagram.com/mayankkshah_/"
+      ],
+      "knowsAbout": ["Web Development", "Python", "JavaScript", "HTML", "CSS", "Git"],
+      "alumniOf": "Satyug Darshan Institute of Engineering and Technology"
+    }
+    </script>
+    
+    <style>
+      /* Critical CSS for above-the-fold content */
+      body {
+        font-family: 'Poppins', 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      /* Prevent flash of unstyled content */
+      .theme-loading {
+        visibility: hidden;
+      }
+      
+      /* Dark mode styles for immediate application */
+      .dark {
+        color-scheme: dark;
+        background-color: #0a192f;
+      }
+      
+      .light {
+        color-scheme: light;
+        background-color: #ffffff;
+      }
+
+      /* Custom cursor */
+      .custom-cursor {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(45deg, #64ffda, #00d4ff);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        mix-blend-mode: difference;
+        transition: transform 0.1s ease;
+      }
+
+      .custom-cursor.hover {
+        transform: scale(2);
+      }
+
+      /* Loading optimization */
+      img {
+        loading: lazy;
+        decoding: async;
+      }
+
+      /* Performance optimizations */
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Reduce layout shift */
+      .profile-image-container {
+        aspect-ratio: 1 / 1;
+        background: linear-gradient(45deg, #64ffda, #3182ce);
+        border-radius: 50%;
+      }
+    </style>
+    
+    <script>
+      // Apply theme immediately to prevent flash
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        
+        document.documentElement.classList.add(theme);
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', 
+          theme === 'dark' ? '#0a192f' : '#ffffff'
+        );
+      })();
+
+      // Preload critical scripts
+      const preloadScript = document.createElement('link');
+      preloadScript.rel = 'modulepreload';
+      preloadScript.href = '/src/main.tsx';
+      document.head.appendChild(preloadScript);
+    </script>
+  </head>
+  <body class="theme-loading">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <script>
+      // Remove loading class after DOM is ready
+      document.addEventListener('DOMContentLoaded', function() {
+        document.body.classList.remove('theme-loading');
+        
+        // Custom cursor functionality
+        const cursor = document.getElementById('cursor');
+        let mouseX = 0, mouseY = 0;
+        let cursorX = 0, cursorY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+        });
+
+        function animateCursor() {
+          cursorX += (mouseX - cursorX) * 0.1;
+          cursorY += (mouseY - cursorY) * 0.1;
+          cursor.style.left = cursorX + 'px';
+          cursor.style.top = cursorY + 'px';
+          requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+        // Hover effects
+        document.addEventListener('mouseenter', (e) => {
+          if (e.target && typeof e.target.matches === 'function' && e.target.matches('button, a, .hover-target')) {
+            cursor.classList.add('hover');
+          }
+        }, true);
+
+        document.addEventListener('mouseleave', (e) => {
+          if (e.target && typeof e.target.matches === 'function' && e.target.matches('button, a, .hover-target')) {
+            cursor.classList.remove('hover');
+          }
+        }, true);
+
+        // Performance monitoring
+        if ('performance' in window) {
+          window.addEventListener('load', () => {
+            const perfData = performance.getEntriesByType('navigation')[0];
+            console.log('Page load time:', perfData.loadEventEnd - perfData.loadEventStart, 'ms');
+          });
+        }
+      });
+
+      // Service Worker for caching (optional)
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => console.log('SW registered'))
+            .catch(error => console.log('SW registration failed'));
+        });
+      }
+    </script>
+
+    <!-- EmailJS SDK - Load asynchronously -->
+    <script async src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  </body>
+</html>
