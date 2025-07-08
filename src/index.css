@@ -320,6 +320,274 @@ html {
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
+/* Enhanced Glow Effects */
+.glow-text {
+  text-shadow: 0 0 20px rgba(100, 255, 218, 0.5);
+}
+
+.glow-border {
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+}
+
+.glow-border:hover {
+  box-shadow: 0 0 40px rgba(100, 255, 218, 0.6);
+}
+
+/* Enhanced Button Animations */
+.btn-magnetic {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-magnetic:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Particle Animation */
+@keyframes particle-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-100px) rotate(180deg);
+    opacity: 0.5;
+  }
+}
+
+.particle-animation {
+  animation: particle-float 4s ease-in-out infinite;
+}
+
+/* Enhanced Gradient Animations */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-shift {
+  background-size: 400% 400%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Enhanced Card Hover Effects */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-3d:hover {
+  transform: rotateY(5deg) rotateX(5deg) translateZ(20px);
+}
+
+/* Enhanced Text Effects */
+.text-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Enhanced Loading States */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Enhanced Focus States */
+.focus-ring-enhanced {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.focus-ring-enhanced:focus {
+  outline: none;
+  box-shadow: 
+    0 0 0 3px rgba(100, 255, 218, 0.3),
+    0 0 20px rgba(100, 255, 218, 0.2);
+  transform: scale(1.02);
+}
+
+/* Enhanced Scroll Animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhanced Backdrop Effects */
+.backdrop-blur-3xl {
+  backdrop-filter: blur(60px);
+}
+
+.backdrop-saturate-150 {
+  backdrop-filter: saturate(150%);
+}
+
+/* Enhanced Border Effects */
+.border-gradient-animated {
+  border: 2px solid transparent;
+  background: 
+    linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, #64ffda, #8b5cf6, #ec4899, #64ffda) border-box;
+  background-size: 400% 400%;
+  animation: gradient-shift 4s ease infinite;
+}
+
+.dark .border-gradient-animated {
+  background: 
+    linear-gradient(#0a192f, #0a192f) padding-box,
+    linear-gradient(45deg, #64ffda, #8b5cf6, #ec4899, #64ffda) border-box;
+  background-size: 400% 400%;
+}
+
+/* Enhanced Typography */
+.text-gradient-animated {
+  background: linear-gradient(45deg, #64ffda, #8b5cf6, #ec4899, #64ffda);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 4s ease infinite;
+}
+
+/* Enhanced Interactive Elements */
+.interactive-element {
+  position: relative;
+  overflow: hidden;
+}
+
+.interactive-element::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.interactive-element:hover::before {
+  left: 100%;
+}
+
+/* Enhanced Performance Optimizations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.optimize-animations {
+  will-change: transform, opacity;
+}
+
+/* Enhanced Mobile Optimizations */
+@media (max-width: 768px) {
+  .mobile-optimized {
+    transform: none !important;
+    animation: none !important;
+  }
+  
+  .mobile-simplified {
+    backdrop-filter: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Enhanced Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .respect-motion-preference {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Enhanced Dark Mode Transitions */
+.theme-transition {
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Enhanced Utility Classes */
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+/* Enhanced Container Queries Support */
+@container (min-width: 768px) {
+  .container-responsive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@container (min-width: 1024px) {
+  .container-responsive {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* Gradient Text */
 .gradient-text {
   background: linear-gradient(45deg, #64ffda, #3182ce, #8b5cf6, #ec4899);

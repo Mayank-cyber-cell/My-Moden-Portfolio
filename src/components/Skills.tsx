@@ -108,8 +108,10 @@ const Skills: React.FC = () => {
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         <motion.div variants={itemVariants} className="text-center mb-16">
-          <h2 className="text-5xl sm:text-6xl font-black text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text mb-6">
+          <h2 className="text-5xl sm:text-6xl font-black text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text mb-6 relative">
             My Skills
+            {/* Enhanced glow effect */}
+            <div className="absolute inset-0 text-5xl sm:text-6xl font-black bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent blur-sm opacity-30 animate-pulse"></div>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
             A comprehensive overview of my technical abilities, creative skills, and personal expertise

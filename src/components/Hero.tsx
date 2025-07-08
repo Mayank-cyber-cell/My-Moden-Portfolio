@@ -166,9 +166,11 @@ const Hero: React.FC = () => {
           {/* Name with Gradient Animation */}
           <motion.h1 
             variants={itemVariants}
-            className="text-4xl sm:text-6xl lg:text-7xl font-black text-transparent bg-gradient-to-r from-purple-400 via-pink-500 via-cyan-400 to-blue-500 bg-clip-text animate-gradient bg-300%"
+            className="text-4xl sm:text-6xl lg:text-8xl font-black text-transparent bg-gradient-to-r from-purple-400 via-pink-500 via-cyan-400 to-blue-500 bg-clip-text animate-gradient bg-300% relative"
           >
             Mayank Kumar Shah
+            {/* Glowing effect */}
+            <div className="absolute inset-0 text-4xl sm:text-6xl lg:text-8xl font-black bg-gradient-to-r from-purple-400 via-pink-500 via-cyan-400 to-blue-500 bg-clip-text text-transparent blur-sm opacity-50 animate-pulse"></div>
           </motion.h1>
 
           {/* Dynamic Role with Typing Effect */}
