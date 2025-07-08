@@ -386,19 +386,6 @@ const Contact: React.FC = () => {
                   </motion.button>
                 </form>
 
-                {/* EmailJS Setup Status */}
-                <div className="mt-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-xl">
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 mt-0.5" />
-                    <div className="text-sm text-green-800 dark:text-green-300">
-                      <p className="font-semibold mb-1">✅ EmailJS Fully Configured!</p>
-                      <p>✅ Service ID: service_ai1kbyy</p>
-                      <p>✅ Template ID: template_0k5tmms</p>
-                      <p>✅ Public Key: OOJHpL4PUhgUVFbSW</p>
-                      <p className="mt-2 text-xs opacity-80">Your contact form is ready to receive messages!</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </motion.div>
