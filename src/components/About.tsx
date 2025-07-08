@@ -139,7 +139,7 @@ const About: React.FC = () => {
                 <div className="absolute -inset-4 bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-600 rounded-full blur-lg opacity-30 animate-pulse -z-10"></div>
                 
                 <img 
-                  src="/profile.jpg" 
+                  src="/profile copy copy copy copy copy.jpg" 
                   alt="Mayank Kumar Shah - Profile Photo"
                   className="w-full h-full object-cover object-center relative z-10 rounded-full"
                   loading="lazy"
