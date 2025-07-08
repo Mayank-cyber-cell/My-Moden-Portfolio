@@ -130,72 +130,116 @@ const About: React.FC = () => {
               {/* Profile Photo Container */}
               <motion.div 
                 whileHover={{ scale: 1.05 }}
-                className="absolute inset-12 rounded-full overflow-hidden shadow-2xl border-4 border-white dark:border-gray-600 relative"
+                className="absolute inset-12 rounded-full overflow-hidden shadow-2xl relative"
               >
-                {/* Gradient Background (fallback) */}
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-400 via-pink-500 to-cyan-600 rounded-full"></div>
+                {/* Enhanced Multi-layer Border System */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-600 p-1">
+                  <div className="absolute inset-1 rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 p-1">
+                    <div className="absolute inset-1 rounded-full bg-white dark:bg-slate-800 p-1">
+                      <div className="w-full h-full rounded-full overflow-hidden relative bg-gradient-to-br from-purple-400 via-pink-500 to-cyan-600">
+                        {/* Your Personal Image */}
+                        <img 
+                          src="/profile copy copy copy copy copy copy.jpg" 
+                          alt="Mayank Kumar Shah - Professional Photo"
+                          className="w-full h-full object-cover relative z-10"
+                          style={{ 
+                            objectPosition: 'center center',
+                            objectFit: 'cover'
+                          }}
+                          loading="lazy"
+                          onError={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            target.style.display = 'none';
+                            const fallback = target.parentElement?.querySelector('.fallback-logo') as HTMLElement;
+                            if (fallback) fallback.style.display = 'flex';
+                          }}
+                        />
+                        
+                        {/* Fallback MKS Logo */}
+                        <div className="fallback-logo absolute inset-0 flex items-center justify-center text-4xl font-black text-white z-20" style={{ display: 'none' }}>
+                          MKS
+                        </div>
+                        
+                        {/* Professional Overlay Effect */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500 z-30"></div>
+                        
+                        {/* Subtle Inner Glow */}
+                        <div className="absolute inset-0 rounded-full shadow-inner shadow-purple-500/20"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 
-                {/* Your Personal Image */}
-                <img 
-                  src="/profile.jpg" 
-                  alt="Mayank Kumar Shah - Profile Photo"
-                  className="absolute inset-0 w-full h-full object-cover rounded-full relative z-10"
-                  loading="lazy"
-                  style={{ 
-                    objectPosition: 'center center', // Perfect centering
-                    objectFit: 'cover', // Maintains aspect ratio, fills circle
-                    borderRadius: '50%' // Ensures circular crop
-                  }}
-                  onError={(e) => {
-                    // Fallback to MKS logo if image fails to load
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                    // Show gradient background as fallback
-                  }}
-                />
-                
-                {/* Fallback MKS Logo (only shows if image fails) */}
-                <motion.div
-                  whileHover={{ rotate: 12, scale: 1.1 }}
-                  className="absolute inset-0 flex items-center justify-center text-6xl font-black text-white z-20 rounded-full"
-                  style={{ display: 'none' }}
-                >
-                  MKS
-                </motion.div>
-                
-                {/* Hover overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-400/20 via-transparent to-cyan-600/20 opacity-0 hover:opacity-100 transition-opacity duration-500 z-30 rounded-full"></div>
+                {/* Enhanced Glow Effect */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-600 opacity-30 blur-md scale-110 animate-pulse"></div>
               </motion.div>
 
               {/* Floating Icons */}
               <motion.div
                 animate={{ 
                   y: [0, -20, 0],
-                  rotate: [0, 360, 0]
+                  rotate: [0, 360, 0],
+                  scale: [1, 1.1, 1]
                 }}
                 transition={{ 
-                  duration: 4,
+                  duration: 6,
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
-                className="absolute top-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center text-white shadow-xl"
+                className="absolute top-6 right-6 w-14 h-14 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center text-white shadow-2xl border-2 border-white/30"
               >
                 <Sparkles className="w-6 h-6" />
               </motion.div>
               <motion.div
                 animate={{ 
                   y: [0, 20, 0],
-                  rotate: [0, -360, 0]
+                  rotate: [0, -360, 0],
+                  scale: [1, 1.1, 1]
                 }}
                 transition={{ 
-                  duration: 5,
+                  duration: 7,
                   repeat: Infinity,
                   ease: "easeInOut",
                   delay: 1
                 }}
-                className="absolute bottom-8 left-8 w-12 h-12 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center text-white shadow-xl"
+                className="absolute bottom-6 left-6 w-14 h-14 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center text-white shadow-2xl border-2 border-white/30"
               >
                 <Zap className="w-6 h-6" />
+              </motion.div>
+              
+              {/* Additional Floating Elements */}
+              <motion.div
+                animate={{ 
+                  y: [0, -15, 0],
+                  x: [0, 10, 0],
+                  rotate: [0, 180, 360]
+                }}
+                transition={{ 
+                  duration: 8,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 2
+                }}
+                className="absolute top-1/2 right-4 w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center text-white shadow-xl border border-white/20"
+              >
+                <Code className="w-5 h-5" />
+              </motion.div>
+              
+              <motion.div
+                animate={{ 
+                  y: [0, 15, 0],
+                  x: [0, -10, 0],
+                  rotate: [0, -180, -360]
+                }}
+                transition={{ 
+                  duration: 9,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 3
+                }}
+                className="absolute top-1/2 left-4 w-10 h-10 bg-gradient-to-r from-pink-400 to-rose-500 rounded-full flex items-center justify-center text-white shadow-xl border border-white/20"
+              >
+                <Heart className="w-5 h-5" />
               </motion.div>
             </div>
           </motion.div>
