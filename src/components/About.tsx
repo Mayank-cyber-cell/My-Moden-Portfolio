@@ -130,19 +130,20 @@ const About: React.FC = () => {
               {/* Profile Photo Container */}
               <motion.div 
                 whileHover={{ scale: 1.05 }}
-                className="absolute inset-12 rounded-full overflow-hidden shadow-2xl border-4 border-white dark:border-gray-600 relative"
+                className="absolute inset-12 rounded-full overflow-hidden shadow-2xl border-4 border-white dark:border-gray-600 relative bg-gradient-to-br from-purple-400 via-pink-500 to-cyan-600"
               >
-                {/* Background gradient for fallback */}
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-400 via-pink-500 to-cyan-600"></div>
-                
                 {/* Enhanced glow effect behind */}
                 <div className="absolute -inset-4 bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-600 rounded-full blur-lg opacity-30 animate-pulse -z-10"></div>
                 
                 <img 
                   src="/profile copy copy copy copy copy.jpg" 
                   alt="Mayank Kumar Shah - Profile Photo"
-                  className="w-full h-full object-cover object-center relative z-10 rounded-full"
+                  className="w-full h-full object-cover object-center relative z-10"
                   loading="lazy"
+                  style={{ 
+                    objectPosition: 'center center',
+                    objectFit: 'cover'
+                  }}
                   onError={(e) => {
                     // Fallback to MKS logo if image fails to load
                     const target = e.target as HTMLImageElement;
@@ -154,14 +155,14 @@ const About: React.FC = () => {
                 {/* Fallback MKS Logo */}
                 <motion.div
                   whileHover={{ rotate: 12, scale: 1.1 }}
-                  className="absolute inset-0 flex items-center justify-center text-6xl font-black text-white z-20 rounded-full"
+                  className="absolute inset-0 flex items-center justify-center text-6xl font-black text-white z-20"
                   style={{ display: 'none' }}
                 >
                   MKS
                 </motion.div>
                 
                 {/* Hover overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-400/20 via-transparent to-cyan-600/20 opacity-0 hover:opacity-100 transition-opacity duration-500 z-30 rounded-full"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-400/20 via-transparent to-cyan-600/20 opacity-0 hover:opacity-100 transition-opacity duration-500 z-30"></div>
               </motion.div>
 
               {/* Floating Icons */}
