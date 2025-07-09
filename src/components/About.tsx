@@ -109,73 +109,48 @@ const About: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Profile Section with Real Photo */}
           <motion.div variants={itemVariants} className="relative">
-            <div className="relative w-96 h-96 mx-auto">
-              {/* Animated Rings */}
+            <div className="relative max-w-lg mx-auto">
+              {/* Main Image Container */}
               <motion.div 
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute inset-0 bg-gradient-to-r from-purple-400 to-cyan-600 rounded-full opacity-20"
-              />
-              <motion.div 
-                animate={{ rotate: -360 }}
-                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-                className="absolute inset-4 bg-gradient-to-r from-pink-500 to-blue-500 rounded-full opacity-30"
-              />
-              <motion.div 
-                animate={{ rotate: 360 }}
-                transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                className="absolute inset-8 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full opacity-20"
-              />
-              
-              {/* Profile Photo Container */}
-              <motion.div 
-                whileHover={{ scale: 1.05 }}
-                className="absolute inset-12 rounded-full overflow-hidden shadow-2xl relative"
+                whileHover={{ scale: 1.02, y: -5 }}
+                className="relative overflow-hidden rounded-3xl shadow-2xl bg-gradient-to-br from-purple-400 via-pink-500 to-cyan-600 p-1"
               >
-                {/* Enhanced Multi-layer Border System */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-600 p-1">
-                  <div className="absolute inset-1 rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 p-1">
-                    <div className="absolute inset-1 rounded-full bg-white dark:bg-slate-800 p-1">
-                      <div className="w-full h-full rounded-full overflow-hidden relative bg-gradient-to-br from-purple-400 via-pink-500 to-cyan-600">
-                        {/* Your Personal Image */}
-                        <img 
-                          src="/profile copy.jpg" 
-                          alt="Mayank Kumar Shah - Professional Photo"
-                          className="w-full h-full object-cover object-center relative z-10 rounded-full"
-                          style={{ 
-                            objectPosition: 'center top',
-                            objectFit: 'cover',
-                            transform: 'scale(1.1)'
-                          }}
-                          loading="lazy"
-                          onError={(e) => {
-                            const target = e.target as HTMLImageElement;
-                            target.style.display = 'none';
-                            const fallback = target.parentElement?.querySelector('.fallback-logo') as HTMLElement;
-                            if (fallback) fallback.style.display = 'flex';
-                          }}
-                        />
-                        
-                        {/* Fallback MKS Logo */}
-                        <div className="fallback-logo absolute inset-0 flex items-center justify-center text-4xl font-black text-white z-20" style={{ display: 'none' }}>
-                          MKS
-                        </div>
-                        
-                        {/* Professional Overlay Effect */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500 z-30"></div>
-                        
-                        {/* Subtle Inner Glow */}
-                        <div className="absolute inset-0 rounded-full shadow-inner shadow-purple-500/20"></div>
-                      </div>
+                <div className="bg-white dark:bg-slate-800 rounded-3xl p-1">
+                  <div className="relative overflow-hidden rounded-2xl">
+                    {/* Your Professional Image */}
+                    <img 
+                      src="/profile copy copy.jpg" 
+                      alt="Mayank Kumar Shah - Professional Photo"
+                      className="w-full h-auto object-cover relative z-10"
+                      style={{ 
+                        aspectRatio: '3/4',
+                        objectFit: 'cover',
+                        objectPosition: 'center center'
+                      }}
+                      loading="lazy"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                        const fallback = target.parentElement?.querySelector('.fallback-logo') as HTMLElement;
+                        if (fallback) fallback.style.display = 'flex';
+                      }}
+                    />
+                    
+                    {/* Fallback MKS Logo */}
+                    <div className="fallback-logo absolute inset-0 flex items-center justify-center text-4xl font-black text-white bg-gradient-to-br from-purple-400 via-pink-500 to-cyan-600 z-20" style={{ display: 'none' }}>
+                      MKS
                     </div>
+                    
+                    {/* Professional Overlay Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500 z-30"></div>
                   </div>
                 </div>
                 
                 {/* Enhanced Glow Effect */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-600 opacity-30 blur-md scale-110 animate-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-600 opacity-20 blur-xl scale-105 animate-pulse"></div>
               </motion.div>
 
-              {/* Floating Icons */}
+              {/* Floating Decorative Elements */}
               <motion.div
                 animate={{ 
                   y: [0, -20, 0],
@@ -187,10 +162,11 @@ const About: React.FC = () => {
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
-                className="absolute top-6 right-6 w-14 h-14 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center text-white shadow-2xl border-2 border-white/30"
+                className="absolute -top-4 -right-4 w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center text-white shadow-2xl border-2 border-white/30"
               >
-                <Sparkles className="w-6 h-6" />
+                <Sparkles className="w-5 h-5" />
               </motion.div>
+              
               <motion.div
                 animate={{ 
                   y: [0, 20, 0],
@@ -203,9 +179,9 @@ const About: React.FC = () => {
                   ease: "easeInOut",
                   delay: 1
                 }}
-                className="absolute bottom-6 left-6 w-14 h-14 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center text-white shadow-2xl border-2 border-white/30"
+                className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-r from-green-400 to-emerald-500 rounded-2xl flex items-center justify-center text-white shadow-2xl border-2 border-white/30"
               >
-                <Zap className="w-6 h-6" />
+                <Zap className="w-5 h-5" />
               </motion.div>
               
               {/* Additional Floating Elements */}
@@ -221,9 +197,9 @@ const About: React.FC = () => {
                   ease: "easeInOut",
                   delay: 2
                 }}
-                className="absolute top-1/2 right-4 w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center text-white shadow-xl border border-white/20"
+                className="absolute top-1/4 -right-6 w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-xl flex items-center justify-center text-white shadow-xl border border-white/20"
               >
-                <Code className="w-5 h-5" />
+                <Code className="w-4 h-4" />
               </motion.div>
               
               <motion.div
@@ -238,9 +214,9 @@ const About: React.FC = () => {
                   ease: "easeInOut",
                   delay: 3
                 }}
-                className="absolute top-1/2 left-4 w-10 h-10 bg-gradient-to-r from-pink-400 to-rose-500 rounded-full flex items-center justify-center text-white shadow-xl border border-white/20"
+                className="absolute top-3/4 -left-6 w-8 h-8 bg-gradient-to-r from-pink-400 to-rose-500 rounded-xl flex items-center justify-center text-white shadow-xl border border-white/20"
               >
-                <Heart className="w-5 h-5" />
+                <Heart className="w-4 h-4" />
               </motion.div>
             </div>
           </motion.div>
