@@ -141,10 +141,11 @@ const About: React.FC = () => {
                         <img 
                           src="/profile copy.jpg" 
                           alt="Mayank Kumar Shah - Professional Photo"
-                          className="w-full h-full object-cover relative z-10"
+                          className="w-full h-full object-cover object-center relative z-10 rounded-full"
                           style={{ 
-                            objectPosition: 'center center',
-                            objectFit: 'cover'
+                            objectPosition: 'center top',
+                            objectFit: 'cover',
+                            transform: 'scale(1.1)'
                           }}
                           loading="lazy"
                           onError={(e) => {
