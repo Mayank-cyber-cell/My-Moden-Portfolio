@@ -139,7 +139,7 @@ const About: React.FC = () => {
                       <div className="w-full h-full rounded-full overflow-hidden relative bg-gradient-to-br from-purple-400 via-pink-500 to-cyan-600">
                         {/* Your Personal Image */}
                         <img 
-                          src="/profile copy copy copy copy copy copy.jpg" 
+                          src="/profile copy.jpg" 
                           alt="Mayank Kumar Shah - Professional Photo"
                           className="w-full h-full object-cover relative z-10"
                           style={{ 
