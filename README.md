@@ -14,7 +14,7 @@ Timeline/Resume section with a download button
 
 Contact form and social media links
 
-Responsive Navbar with hamburger menu on mobile
+Responsive Navbar with hamburger menu on mobile.
 
 Smooth Animations: on-scroll reveals and hover transitions
 
