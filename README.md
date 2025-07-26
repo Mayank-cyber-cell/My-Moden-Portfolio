@@ -36,7 +36,7 @@ Add your actual projects with names, descriptions, live links, and screenshots
 
 Define skill list (HTML, CSS, JS, Python, Git) with icons and proficiency levels
 
-Implement a Download Resume button—link to your PDF
+Implement a Download Resume button—link to your PDF's
 
 Add your contact email and social profiles (GitHub, LinkedIn, Instagram)
 
