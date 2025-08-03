@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Github, Lightbulb, Code, Users, Trophy, ExternalLink, Zap, Brain } from 'lucide-react';
+import { Github, ExternalLink, Code, Brain, Heart, Music, Shield, Monitor } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -12,55 +12,61 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
-      title: "EcoCoder",
-      description: "AI-powered waste classification site with user-buyer interaction system. Built with HTML, CSS, and JavaScript to promote environmental sustainability through smart waste management.",
-      tech: ["HTML5", "CSS3", "JavaScript", "AI Integration"],
-      icon: <Lightbulb className="w-8 h-8" />,
-      status: "Completed",
-      category: "Environmental Tech",
+      title: "Blind Date With AI",
+      description: "A fun AI-powered dating simulation where users chat with an AI character on a blind date.",
+      tech: ["AI", "Chat Interface", "React", "JavaScript"],
+      icon: <Heart className="w-8 h-8" />,
+      category: "AI Simulation",
+      gradient: "from-pink-400 to-rose-500",
+      bgGradient: "from-pink-50 to-rose-50 dark:from-pink-900/20 dark:to-rose-900/20",
+      liveUrl: "https://blinddatewithai.netlify.app",
+      githubUrl: "https://github.com/Mayank-cyber-cell/Blind-Date-With-AI"
+    },
+    {
+      title: "MedGuide Pill Tracker",
+      description: "Helps users manage medicine intake with reminders, search, and FDA data integration.",
+      tech: ["Healthcare", "FDA API", "Reminders", "React"],
+      icon: <Shield className="w-8 h-8" />,
+      category: "Healthcare",
       gradient: "from-green-400 to-emerald-500",
       bgGradient: "from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20",
-      githubUrl: "https://github.com/Mayank-cyber-cell",
-      features: ["AI Waste Classification", "User-Buyer Interaction", "Environmental Impact Tracking"]
+      liveUrl: "https://medguide-pill-tracker.netlify.app",
+      githubUrl: "https://github.com/Mayank-cyber-cell/MedGuide-Pill_Tracker"
     },
     {
-      title: "Zomato Clone",
-      description: "A responsive front-end UI replica of Zomato with modern design principles. Features include restaurant listings, search functionality, and mobile-first responsive design.",
-      tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-      icon: <Code className="w-8 h-8" />,
-      status: "Completed",
-      category: "Web Development",
+      title: "MoodTunes",
+      description: "AI-generated music player that matches songs based on your detected mood.",
+      tech: ["AI", "Music", "Mood Detection", "React"],
+      icon: <Music className="w-8 h-8" />,
+      category: "AI Music",
+      gradient: "from-purple-400 to-indigo-500",
+      bgGradient: "from-purple-50 to-indigo-50 dark:from-purple-900/20 dark:to-indigo-900/20",
+      liveUrl: "https://mood-tunes-nine.vercel.app",
+      githubUrl: "https://github.com/Mayank-cyber-cell/MoodTunes"
+    },
+    {
+      title: "MindMate",
+      description: "Your personal mental health buddy offering journaling, quotes, and calming UI.",
+      tech: ["Mental Health", "Journaling", "React", "Wellness"],
+      icon: <Brain className="w-8 h-8" />,
+      category: "Mental Health",
+      gradient: "from-cyan-400 to-blue-500",
+      bgGradient: "from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20",
+      liveUrl: "https://mindmatebuddy.netlify.app",
+      githubUrl: "https://github.com/Mayank-cyber-cell/MindMate"
+    },
+    {
+      title: "Pookie OS",
+      description: "A web-based desktop OS simulation with draggable windows and interactive apps.",
+      tech: ["OS Simulation", "Drag & Drop", "JavaScript", "UI/UX"],
+      icon: <Monitor className="w-8 h-8" />,
+      category: "OS Simulation",
       gradient: "from-orange-400 to-red-500",
       bgGradient: "from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20",
-      githubUrl: "https://github.com/Mayank-cyber-cell",
-      features: ["Restaurant Listings", "Search Functionality", "Mobile Responsive"]
-    },
-    {
-      title: "AI Study Partner App",
-      description: "A smart matching system concept for study buddies based on learning styles. This innovative app connects students with compatible study partners using AI algorithms.",
-      tech: ["Python", "AI/ML", "React", "Node.js"],
-      icon: <Brain className="w-8 h-8" />,
-      status: "Concept",
-      category: "AI/ML",
-      gradient: "from-purple-400 to-pink-500",
-      bgGradient: "from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20",
-      githubUrl: "https://github.com/Mayank-cyber-cell",
-      features: ["Smart Matching Algorithm", "Learning Style Analysis", "Study Session Planning"]
+      liveUrl: "https://pookie-os.netlify.app",
+      githubUrl: "https://github.com/Mayank-cyber-cell/Pookie-OS"
     }
   ];
-
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'Completed':
-        return 'bg-gradient-to-r from-green-400 to-emerald-500 text-white';
-      case 'Concept':
-        return 'bg-gradient-to-r from-purple-400 to-pink-500 text-white';
-      case 'In Development':
-        return 'bg-gradient-to-r from-yellow-400 to-orange-500 text-white';
-      default:
-        return 'bg-gradient-to-r from-gray-400 to-gray-500 text-white';
-    }
-  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -101,11 +107,11 @@ const Projects: React.FC = () => {
             <div className="absolute inset-0 text-5xl sm:text-6xl font-black bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent blur-sm opacity-30 animate-pulse"></div>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            A collection of projects showcasing my skills in web development, AI integration, and problem-solving
+            A collection of innovative projects showcasing AI integration, healthcare solutions, and creative web applications
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -137,12 +143,6 @@ const Projects: React.FC = () => {
                       </p>
                     </div>
                   </div>
-                  <motion.span 
-                    whileHover={{ scale: 1.1 }}
-                    className={`px-4 py-2 rounded-full text-xs font-bold shadow-lg ${getStatusColor(project.status)}`}
-                  >
-                    {project.status}
-                  </motion.span>
                 </div>
 
                 {/* Description */}
@@ -150,25 +150,10 @@ const Projects: React.FC = () => {
                   {project.description}
                 </p>
 
-                {/* Features */}
-                <div className="mb-6">
-                  <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-3 uppercase tracking-wider">
-                    Key Features
-                  </h4>
-                  <div className="space-y-2">
-                    {project.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center space-x-2">
-                        <Zap className="w-4 h-4 text-purple-400" />
-                        <span className="text-gray-700 dark:text-gray-300 text-sm">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
                 {/* Tech Stack */}
                 <div className="mb-8">
                   <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-4 uppercase tracking-wider">
-                    Technologies Used
+                    Technologies
                   </h4>
                   <div className="flex flex-wrap gap-3">
                     {project.tech.map((tech, techIndex) => (
@@ -183,19 +168,31 @@ const Projects: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Action Button */}
-                <div className="flex justify-center">
+                {/* Action Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <motion.a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className={`flex items-center justify-center space-x-3 px-6 py-3 bg-gradient-to-r ${project.gradient} text-white rounded-2xl font-bold hover:shadow-2xl transition-all duration-500 group/btn shadow-xl relative overflow-hidden flex-1`}
+                  >
+                    <ExternalLink size={18} className="group-hover/btn:rotate-12 transition-transform duration-300" />
+                    <span>Live Demo</span>
+                    <div className="absolute inset-0 bg-white/20 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                  </motion.a>
+                  
                   <motion.a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`flex items-center space-x-3 px-8 py-4 bg-gradient-to-r ${project.gradient} text-white rounded-2xl font-bold hover:shadow-2xl transition-all duration-500 group/btn shadow-xl relative overflow-hidden`}
+                    className="flex items-center justify-center space-x-3 px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-2xl font-bold hover:border-transparent hover:bg-gradient-to-r hover:from-gray-600 hover:to-gray-800 hover:text-white transition-all duration-500 shadow-lg hover:shadow-xl flex-1"
                   >
-                    <Github size={20} className="group-hover/btn:rotate-12 transition-transform duration-300" />
-                    <span>View on GitHub</span>
-                    <div className="absolute inset-0 bg-white/20 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                    <Github size={18} />
+                    <span>GitHub</span>
                   </motion.a>
                 </div>
 
@@ -249,7 +246,7 @@ const Projects: React.FC = () => {
                 Want to see more of my work?
               </h3>
               <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                I'm always working on new projects and ideas. Check out my GitHub for the latest updates and contributions!
+                I'm constantly building new projects and exploring innovative technologies. Check out my GitHub for the latest updates and contributions!
               </p>
               <motion.a
                 href="https://github.com/Mayank-cyber-cell"
