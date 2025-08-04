@@ -17,7 +17,7 @@ This is a sleek, minimal, and responsive web portfolio made to represent **who I
 
 ## 📁 Project Structure
 
-bash
+```
 My-Moden-Portfolio/
 ├── assets/
 │   ├── images/       # Portfolio images
@@ -27,12 +27,16 @@ My-Moden-Portfolio/
 ├── projects.html     # My Projects showcase
 ├── contact.html      # Contact form and links
 └── README.md         # This file
-
+```
 ## 🛠️ Tech Stack
 HTML5
+
 CSS3
+
 JavaScript (basic interactivity)
+
 Font Awesome Icons
+
 Responsive Media Queries
 
 
