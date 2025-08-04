@@ -1,87 +1,63 @@
-🖥️ Personal Portfolio Website A modern, responsive portfolio built with AI-generated boilerplate and custom updates.
+# 🌟 Mayank Kumar Shah — Modern Portfolio Website
 
-🚀 Project Overview This is a personal portfolio website designed to showcase the work, skills, and professional presence of [Your Name]—a first-year B.Tech CSE student. The website features clean layouts, modern CSS styling, interactive sections, and responsive design for all devices.
+Welcome to my modern developer portfolio!  
+This is a sleek, minimal, and responsive web portfolio made to represent **who I am, what I do, and what I've built** — all in one place.
 
-🎯 Features Hero Section with animated headlines and call-to-action buttons
+---
 
-About Me section with your bio and profile image
+## ✨ Features
 
-Projects gallery featuring interactive cards with hover effects
+- ✅ Clean & modern design
+- ✅ Fully responsive for mobile, tablet, and desktop
+- ✅ Showcases my skills, projects, resume, and contact info
+- ✅ Easy-to-update HTML/CSS structure
+- ✅ Linked to GitHub for live project previews
 
-Skills section with proficiency badges or charts
+---
 
-Timeline/Resume section with a download button
+## 📁 Project Structure
 
-Contact form and social media links
+bash
+My-Moden-Portfolio/
+├── assets/
+│   ├── images/       # Portfolio images
+│   └── css/          # Custom CSS styles
+├── index.html        # Main landing page
+├── about.html        # About Me section
+├── projects.html     # My Projects showcase
+├── contact.html      # Contact form and links
+└── README.md         # This file
 
-Responsive Navbar with hamburger menu on mobile.
+## 🛠️ Tech Stack
+HTML5
+CSS3
+JavaScript (basic interactivity)
+Font Awesome Icons
+Responsive Media Queries
 
-Smooth Animations: on-scroll reveals and hover transitions
 
-Light/Dark Theme Toggle for user preference
+## 🧑‍💻 About Me
+Hi, I'm Mayank Kumar Shah – a 1st-year CSE student passionate about web development, AI, and creative digital experiences.
+This portfolio is my way of introducing myself to the world, showcasing my journey, and connecting with like-minded tech enthusiasts.
 
-⚙️ Tech Stack HTML5 & CSS3 (including flexbox/grid and CSS variables)
+## 🚀 How to Use This
+git clone https://github.com/Mayank-cyber-cell/My-Moden-Portfolio.git
+cd My-Moden-Portfolio
+Open index.html in your browser.
 
-JavaScript for interactive features and animations
+Customize the content in the HTML/CSS files as needed.
 
-Optional: GSAP or Framer Motion for fluid UI effects
+You can deploy it using Netlify, GitHub Pages, or Vercel.
 
-Responsive design with CSS media queries
+📬 Connect with Me
+📧 Email: jimayank2105@gmail.com
 
-✅ Planned Updates These tweaks and enhancements have been planned based on your original requirements:
+🐙 GitHub: Mayank-cyber-cell
 
-Replace placeholder content with your personal name, title, bio, and details
+📸 Instagram: @mayankkshah_  &&  @_coding_masters
 
-Add your actual projects with names, descriptions, live links, and screenshots
 
-Define skill list (HTML, CSS, JS, Python, Git) with icons and proficiency levels
+## 📄 License
+This project is open source and available under the MIT License.
 
-Implement a Download Resume button—link to your PDF's
-
-Add your contact email and social profiles (GitHub, LinkedIn, Instagram)
-
-Improve color theme (dark/neon or light/pastel), swap placeholder palette
-
-Fix and enhance the navbar toggle functionality
-
-Add cursor-follow bubbles/particles and section scroll animations
-
-Ensure accessibility, semantic markup, and fast load times
-
-🛠️ Getting Started Clone the repo:
-
-sh Copy Edit git clone https://github.com/your-username/portfolio.git cd portfolio Open index.html in your browser to preview the site.
-
-To customize:
-
-Edit Hero, About, Projects, Skills, Resume, and Contact sections
-
-Update styles.css for color themes and typography
-
-Enhance script.js for animations and navbar behavior
-
-Deploy to Netlify or GitHub Pages once finalized.
-
-🛠️ Usage & Deployment Customize content: Replace all demo sections with your own (name, bio, project info, resume link)
-
-Add assets: Upload your profile image and project screenshots to assets/. Update the HTML paths.
-
-Install animations: Use GSAP or write custom JS for element fade-ins and interactive effects.
-
-Test on devices: Ensure it looks great on mobile, tablet, and desktop.
-
-Push to a branch and deploy via Netlify or GitHub Pages.
-
-✅ What I Need From You Before finalizing, please provide:
-
-Item Details Needed Name & Tagline How you want it displayed Profile Photo File or link Bio/About Text 2–3 sentence introduction Project Details Name, description, tech, link for each Skill List & Levels Icons optional Resume PDF Link or upload Contact Email & Socials GitHub, LinkedIn, Instagram, etc. Preferred Theme/Colors Dark/neon or light/pastel with hex if possible Animation Preferences Cursor bubbles, hover styles, scroll reveals
-
-🤝 Contributing Update content in HTML files
-
-Tweak styles in styles.css
-
-Enhance animations in script.js
-
-Open a PR with updates and descriptions
-
-🧩 License This project is for personal use only. Feel free to modify, expand, or deploy as you wish.
+## 💖 If you liked this portfolio, please ⭐ the repo and share your feedback!
