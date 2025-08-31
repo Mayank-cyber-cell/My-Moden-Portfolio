@@ -1,23 +1,30 @@
+<div align="center">
+
 # 🌟 Mayank Kumar Shah — Modern Portfolio Website
 
-Welcome to my modern developer portfolio!  
-This is a sleek, minimal, and responsive web portfolio made to represent **who I am, what I do, and what I've built** — all in one place.
+✨ *A sleek, minimal, and responsive portfolio to showcase my journey!* ✨
+
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=3BA9F4&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Mayank+Kumar+Shah;Web+Developer+%7C+CSE+Student;Passionate+about+AI+%26+Web+Design;Welcome+to+my+Portfolio!)
+
+![Portfolio Banner](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif)
+
+</div>
 
 ---
 
 ## ✨ Features
 
-- ✅ Clean & modern design
-- ✅ Fully responsive for mobile, tablet, and desktop
-- ✅ Showcases my skills, projects, resume, and contact info
-- ✅ Easy-to-update HTML/CSS structure
-- ✅ Linked to GitHub for live project previews
+- ✅ *Clean & modern design*
+- ✅ *Fully responsive for all devices*
+- ✅ *Showcases skills, projects, resume, and contact info*
+- ✅ *Easy-to-update HTML/CSS structure*
+- ✅ *Linked with GitHub for live previews*
 
 ---
 
 ## 📁 Project Structure
 
-```
+```bash
 My-Moden-Portfolio/
 ├── assets/
 │   ├── images/       # Portfolio images
@@ -28,40 +35,65 @@ My-Moden-Portfolio/
 ├── contact.html      # Contact form and links
 └── README.md         # This file
 ```
+
+---
+
 ## 🛠️ Tech Stack
-HTML5
 
-CSS3
+- ⚡ **HTML5** – Semantic structure
+- 🎨 **CSS3** – Styling + Media Queries
+- ✨ **JavaScript** – Basic interactivity
+- 🔗 **Font Awesome** – Icons
+- 📱 **Responsive Design** – Mobile-first
 
-JavaScript (basic interactivity)
-
-Font Awesome Icons
-
-Responsive Media Queries
-
+---
 
 ## 🧑‍💻 About Me
-Hi, I'm Mayank Kumar Shah – a 1st-year CSE student passionate about web development, AI, and creative digital experiences.
-This portfolio is my way of introducing myself to the world, showcasing my journey, and connecting with like-minded tech enthusiasts.
+
+Hi, I'm **Mayank Kumar Shah** 👋  
+💻 1st-year CSE student passionate about **web development, AI, and creative digital experiences**.  
+This portfolio is my way of **introducing myself to the world**, sharing my journey, and connecting with fellow tech enthusiasts.
+
+![Coding GIF](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
+
+---
 
 ## 🚀 How to Use This
+
+```bash
 git clone https://github.com/Mayank-cyber-cell/My-Moden-Portfolio.git
 cd My-Moden-Portfolio
-Open index.html in your browser.
 
-Customize the content in the HTML/CSS files as needed.
+# Open locally
+open index.html
+```
 
-You can deploy it using Netlify, GitHub Pages, or Vercel.
+- ✍️ Customize content in HTML/CSS files
+- 🌍 Deploy on **Netlify, GitHub Pages, or Vercel**
 
-📬 Connect with Me
-📧 Email: jimayank2105@gmail.com
+---
 
-🐙 GitHub: Mayank-cyber-cell
+## 📬 Connect with Me
 
-📸 Instagram: @mayankkshah_  &&  @_coding_masters
+📧 **Email:** [jimayank2105@gmail.com](mailto:jimayank2105@gmail.com)  
+🐙 **GitHub:** [Mayank-cyber-cell](https://github.com/Mayank-cyber-cell)  
+📸 **Instagram:** [@mayankkshah_](https://instagram.com/mayankkshah_) | [@_coding_masters](https://instagram.com/_coding_masters)
 
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Mayank-cyber-cell.My-Moden-Portfolio)
+
+---
 
 ## 📄 License
-This project is open source and available under the MIT License.
 
-## 💖 If you liked this portfolio, please ⭐ the repo and share your feedback!
+📜 This project is licensed under the **MIT License**.
+
+---
+
+<div align="center">
+
+## 💖 If you liked this portfolio...
+⭐ *Please star the repo and share your feedback!* ⭐
+
+![Star GIF](https://media.giphy.com/media/3oKIPwoeGErMmaI43C/giphy.gif)
+
+</div>
