@@ -94,6 +94,5 @@ open index.html
 ## 💖 If you liked this portfolio...
 ⭐ *Please star the repo and share your feedback!* ⭐
 
-![Star GIF]([https://media.giphy.com/media/3oKIPwoeGErMmaI43C/giphy.gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzY2bnNyaWw5b2xidTJ2azJyZm01eDY3eTBwZTFlb3F2cDZkYjUwbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/hRqxN8UbaaGuA/giphy.gif))
 
 </div>
