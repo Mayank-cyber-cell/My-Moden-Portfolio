@@ -51,7 +51,7 @@ My-Moden-Portfolio/
 ## 🧑‍💻 About Me
 
 Hi, I'm **Mayank Kumar Shah** 👋  
-💻 1st-year CSE student passionate about **web development, AI, and creative digital experiences**.  
+💻 1st-year CSE student passionate about **web development, AI, & creative digital experiences**.  
 This portfolio is my way of **introducing myself to the world**, sharing my journey, and connecting with fellow tech enthusiasts.
 
 ![Coding GIF](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
