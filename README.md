@@ -16,7 +16,7 @@
 
 - ✅ *Clean & modern design*
 - ✅ *Fully responsive for all devices*
-- ✅ *Showcases skills, projects, resume, and contact info*
+- ✅ *Showcases skills, projects, resume, and contacts info*
 - ✅ *Easy-to-update HTML/CSS structure*
 - ✅ *Linked with GitHub for live previews*
 
