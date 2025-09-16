@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌟 Mayank Kumar Shah — Modern Portfolio Website
+# 🌟 Mayank Kumar Shah — Modern Portfolio Websites
 
 ✨ *A sleek, minimal, and responsive portfolio to showcase my journey!* ✨
 
