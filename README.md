@@ -40,7 +40,7 @@ My-Moden-Portfolio/
 
 ## 🛠️ Tech Stack
 
-- ⚡ **HTML5** – Semantic structure
+- ⚡ **HTML5** – Semantic Structure
 - 🎨 **CSS3** – Styling + Media Queries
 - ✨ **JavaScript** – Basic interactivity
 - 🔗 **Font Awesome** – Icons
