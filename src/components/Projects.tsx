@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Github, ExternalLink, Heart, Shield, Music, Brain, Monitor } from 'lucide-react';
+import { Github, ExternalLink, Heart, Shield, Music, Brain, Monitor, Film } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -66,6 +66,17 @@ const Projects: React.FC = () => {
       bgGradient: "from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20",
       liveUrl: "https://pookie-os.netlify.app",
       githubUrl: "https://github.com/Mayank-cyber-cell/Pookie-OS"
+    },
+    {
+      title: "MovieWatcher",
+      description: "A movie discovery platform where users can browse, search, and explore movies with detailed information.",
+      tech: ["Movies", "API", "React", "JavaScript"],
+      icon: Film,
+      category: "Entertainment",
+      gradient: "from-red-400 to-pink-500",
+      bgGradient: "from-red-50 to-pink-50 dark:from-red-900/20 dark:to-pink-900/20",
+      liveUrl: "https://movieswatchx.netlify.app/",
+      githubUrl: "https://github.com/Mayank-cyber-cell/MovieWatcher"
     }
   ], []);
 
