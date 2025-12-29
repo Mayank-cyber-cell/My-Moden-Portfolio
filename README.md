@@ -6,8 +6,6 @@
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=3BA9F4&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Mayank+Kumar+Shah;Web+Developer+%7C+CSE+Student;Passionate+about+AI+%26+Web+Design;Welcome+to+my+Portfolio!)
 
-![Portfolio Banner](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHdxbnl0cHJlNWg0b3lhdW95ZG40OW01em91dXRpMHpyOWd5MDBhaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/FEXGAddVac7K4VkY9C/giphy.gif)
-
 </div>
 
 ---
