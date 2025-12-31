@@ -43,7 +43,7 @@ My-Moden-Portfolio/
 - ✨ **JavaScript** – Basic interactivity
 - 🔗 **Font Awesome** – Icons
 - 📱 **Responsive Design** – Mobile-first
-
+  
 ---
 
 ## 🧑‍💻 About Me
