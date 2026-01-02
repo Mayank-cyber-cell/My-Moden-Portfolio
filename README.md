@@ -33,7 +33,6 @@ My-Moden-Portfolio/
 ├── contact.html      # Contact form and links
 └── README.md         # This file
 ```
-
 ---
 
 ## 🛠️ Tech Stack
