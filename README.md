@@ -1,7 +1,7 @@
 <div align="center">
   
 # 🌟 Mayank Kumar Shah — Modern Portfolio Website
-
+ 
 ✨ *A sleek, minimal, and responsive portfolio to showcase my journey!* ✨
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=3BA9F4&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Mayank+Kumar+Shah;Web+Developer+%7C+CSE+Student;Passionate+about+AI+%26+Web+Design;Welcome+to+my+Portfolio!)
